@@ -28,3 +28,27 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+a <- 2
+3 -> b
+```
+
+```{r}
+65 + b
+```
+
+```{r}
+c <- 30
+c + 3
+```
+
+```{r}
+`c`
+```
+
+
+```{r}
+`107學期平均` <- 95
+```
+
