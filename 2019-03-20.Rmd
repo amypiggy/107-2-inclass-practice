@@ -134,3 +134,18 @@ twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
 twDateTime
 ```
 
+```{r}
+LisbonDateTime <- with_tz(2019-03-18 14:04:00,tzone="Europe/Lisbon")
+```
+
+```{r}
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+LisbonDateTime
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-04-01 04:01:00", tz="Asia/Taipei")
+
+USDateTime <- with_tz(twDateTime,tzone = "America/New_York")
+```
+
