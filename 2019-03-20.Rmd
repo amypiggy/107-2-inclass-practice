@@ -331,3 +331,7 @@ sum(x2, na.rm = TRUE)
 sum(x2, na.rm = FALSE)
 ```
 
+```{r}
+0/0
+```
+
