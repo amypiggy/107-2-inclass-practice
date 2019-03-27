@@ -136,6 +136,11 @@ twDateTime
 
 
 ```{r}
+LisbonDateTime <- dmy_h("27-03-2019 15")
+LisbonDateTime
+```
+
+```{r}
 LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
 LisbonDateTime
 ```
@@ -262,6 +267,8 @@ startingDate + years(1)
 startingDate + dyears(1)
 ```
 
+
+
 ```{r}
 ymd("2000-02-01") -> startingDate
 ymd("2019-08-11") -> endingDate
@@ -282,5 +289,45 @@ x == y
 x < y
 x == y2
 x2 < y
+```
+
+```{r}
+x3 <- c("小明","小花")
+y3 <- c("小明","小華")
+x3 == y3
+x3 != y3
+```
+
+```{r}
+x4 <- c(1,5,8)
+y4 <- c(5,8)
+
+x4 %in% y4
+```
+
+```{r}
+x5 <- c("台北市","新北市","高雄市")
+y5 <- c("台北市","新北市")
+
+x5 %in% y5
+```
+
+```{r}
+x2 <- c(1,NA,10)
+y2 <- c(-1,NA,20)
+
+x3 <- c(NA,"小花")
+y3 <- c(NA,"小華")
+```
+
+```{r}
+x2 == y2
+is.na(x2)
+```
+
+```{r}
+sum(x2)
+sum(x2, na.rm = TRUE)
+sum(x2, na.rm = FALSE)
 ```
 
