@@ -134,9 +134,6 @@ twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
 twDateTime
 ```
 
-```{r}
-LisbonDateTime <- with_tz(2019-03-18 14:04:00,tzone="Europe/Lisbon")
-```
 
 ```{r}
 LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
@@ -147,5 +144,44 @@ LisbonDateTime
 twDateTime <- ymd_hms("2019-04-01 04:01:00", tz="Asia/Taipei")
 
 USDateTime <- with_tz(twDateTime,tzone = "America/New_York")
+```
+
+```{r}
+twDateTime<-ymd_hms("2019-03-27 15:39:44", tz="Asia/Taipei")
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+twDateTime
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+LisbonDateTime
+typeof(LisbonDateTime)
+as.double(LisbonDateTime)
+as.double(twDateTime)
+```
+
+```{r}
+TWDT <- dmy_h("27-03-2019 15")
+TWDT
+```
+
+```{r}
+install.packages(c("lubridate"),lib="C:/rpackages")
+library(lubridate,lib="C:/rpackages")
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+twDateTime
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+as.double(twDateTime)
+as.integer(twDateTime)
+```
+
+```{r}
+
 ```
 
