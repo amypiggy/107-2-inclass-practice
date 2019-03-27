@@ -182,6 +182,105 @@ as.integer(twDateTime)
 ```
 
 ```{r}
+LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
+LisbonDateTime
+twDateTime
+```
 
+```{r}
+ymd("1970-01-01") %>% as.integer
+ymd("1970-01-02") %>% as.integer
+ymd("2019-03-11") %>% as.integer
+```
+
+
+
+
+
+
+
+
+```{r}
+a <- c(1, 5, -3)
+b <- c(0.5, 12, 2)
+a+b
+a-b
+a*b
+a/b
+class(a+b)
+```
+
+```{r}
+aL <- c(1L, 5L, -3L)
+bL <- c(-2L, -4L, 8L)
+a+bL
+aL+bL
+class(a+bL)
+class(aL+bL)
+```
+
+```{r}
+a^b
+a %% b
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+twDateTime*2
+as.interger(twDateTime*2)
+```
+
+```{r}
+twDateTime <- ymd_hms("2019-03-18 14:04:00", tz="Asia/Taipei")
+twDateTime+100
+ymd("2019-08-11")-ymd("2000-02-01")
+ymd_hms("2019-03-18 14:04:00")-ymd_hms("2019-03-18 14:02:00")
+```
+
+```{r}
+twDateTime <- mdy_hms("03-18-1960 14:04:00", tz="Asia/Taipei")
+twDateTime
+as.integer(twDateTime)
+```
+
+```{r}
+time1 <- ymd("2019-08-11")
+time2 <- ymd("2000-02-01")
+time1-time2
+class(time1-time2)
+class(time1)
+```
+
+```{r}
+startingDate <- ymd("2000-02-17")
+as.integer(startingDate)
+```
+
+```{r}
+startingDate <- ymd("2000-02-17")
+startingDate + years(1)
+startingDate + dyears(1)
+```
+
+```{r}
+ymd("2000-02-01") -> startingDate
+ymd("2019-08-11") -> endingDate
+endingDate - startingDate
+```
+
+```{r}
+x <- 5
+y <- 7
+
+x2 <- c(1,5,10)
+y2 <- c(-1,5,20)
+```
+
+```{r}
+x > y
+x == y
+x < y
+x == y2
+x2 < y
 ```
 
