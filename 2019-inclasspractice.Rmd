@@ -337,3 +337,50 @@ sum(x2, na.rm = FALSE)
 0/0
 ```
 
+```{r}
+install.packages(c("crayon"),lib="C:/rpackages")
+library(crayon,lib="C:/rpackages")
+```
+
+
+```{r}
+install.packages(c("readr"),lib="C:/rpackages")
+library(readr,lib="C:/rpackages")
+```
+
+
+```{r}
+library(readr)
+exData2 <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/exData2.csv")
+currency <- exData2$幣別
+```
+
+```{r}
+head(currency)
+```
+
+```{r}
+class(currency)
+```
+
+```{r}
+currency <- as.factor(currency)
+```
+
+
+```{r}
+levels(currency)
+```
+
+```{r}
+length(levels(currency))
+```
+
+```{r}
+sum(currency == "日圓JPY/USD")
+```
+
+```{r}
+sum(currency == "人民幣CNY/USD")
+```
+
