@@ -669,6 +669,17 @@ extract2 <- plasticContainer[[c("greenBox")]]
 ```
 
 ```{r}
+extract1[[1]][[1]]
+extract2[[1]]
+```
 
+```{r}
+length(plasticContainer)
+plasticContainer[c(T,F,T)]
+```
+
+```{r}
+成績單
+成績單[c(FALSE,TRUE,TRUE)]
 ```
 
