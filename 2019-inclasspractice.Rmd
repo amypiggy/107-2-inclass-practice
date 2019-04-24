@@ -980,3 +980,18 @@ names(Mat1) <- letters[1:6]
 names(Mat1)
 ```
 
+```{r}
+library(readr)
+classSurvey <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/classSurvey.csv")
+```
+
+```{r}
+classSurvey[,4:5]
+classSurvey[,c(4,5)]
+classSurvey[,c(F,F,F,T,T,F)]
+```
+
+```{r}
+classSurvey[c(1:60),c(4,5)]
+```
+
