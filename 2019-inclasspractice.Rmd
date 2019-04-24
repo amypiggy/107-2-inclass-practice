@@ -880,6 +880,17 @@ m
 tolower(m)
 ```
 
+```{r}
+LETTERS
+chosenLETTERS <- LETTERS[1:8]
+m <- matrix(chosenLETTERS,2,4)
+m
+tolower(m) # 轉成小寫
+m
+toupper(m) # 轉成大寫
+m
+```
+
 
 ```{r}
 chosenLETTERS[8]
@@ -901,4 +912,71 @@ matObj1[3,2]
 matObj1[c(F,F,TRUE,F,F),c(F,TRUE,F)]
 ```
 
+```{r}
+StuDF
+```
+
+```{r}
+StuDF[c("姓名","成績")] 
+```
+
+```{r}
+StuDF[1:5,c("姓名","成績")] 
+```
+
+```{r}
+StuDF[,c("姓名","成績")]
+```
+
+```{r}
+matObj1[,3]
+```
+
+```{r}
+cbind(matObj1,letters[1:5])
+```
+
+```{r}
+matObj1[c(T,F,F,T,F),c(F,T,T)]
+```
+
+
+```{r}
+StuDF
+```
+
+```{r}
+StuList
+```
+
+```{r}
+StuDF[4,c("成績")]
+```
+
+```{r}
+Vector1 <- letters[1:6]
+Vector1
+```
+
+```{r}
+names(Vector1)
+```
+
+```{r}
+names(Vector1) <- c('名稱1','名稱2','名稱3','名稱4','名稱5','名稱6')
+names(Vector1)
+```
+
+```{r}
+Mat1
+```
+
+```{r}
+names(Mat1) 
+```
+
+```{r}
+names(Mat1) <- letters[1:6]
+names(Mat1)
+```
 
