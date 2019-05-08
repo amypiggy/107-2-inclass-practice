@@ -995,3 +995,8 @@ classSurvey[,c(F,F,F,T,T,F)]
 classSurvey[c(1:60),c(4,5)]
 ```
 
+Midterm
+```{r}
+https://drive.google.com/drive/folders/12_9n6c74qF6xu49VLCouEJS2ag3o9dBN?usp=sharing
+```
+
