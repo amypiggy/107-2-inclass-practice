@@ -781,10 +781,6 @@ MAT2[[2]]
 MAT2[c(T,F,F,T)]
 ```
 
-```{r}
-
-```
-
 
 ```{r}
 StuList <- list(
@@ -979,6 +975,20 @@ names(Mat1)
 names(Mat1) <- letters[1:6]
 names(Mat1)
 ```
+
+```{r}
+matObj1
+```
+
+```{r}
+colnames(matObj1) 
+rownames(matObj1)
+```
+
+```{r}
+
+```
+
 
 ```{r}
 library(readr)
