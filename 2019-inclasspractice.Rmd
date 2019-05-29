@@ -1458,3 +1458,24 @@ utility_cobb_douglass(1,2,0.5,0.8)
 utility_cobb_douglass(1,2,.beta=0.8,.alpha=0.5)
 ```
 
+```{r}
+fizzbuzz<-function(x){
+  if(x%%3==0&x%%5!=0){
+    print("fizz")
+  }
+  else if(x%%5==0&x%%3!=0){
+    print("buzz")
+  }
+  else if(x%%5==0&x%%3==0){
+    print("fizzbuzz")
+  }
+  else{
+    print(x)
+  }
+}
+```
+
+```{r}
+
+```
+
