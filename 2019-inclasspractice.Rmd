@@ -1601,6 +1601,45 @@ sequence_source
 ```
 
 ```{r}
+for(i in seq_along(commitHistory)){
+  print(
+    str_c(
+      "Author is ",
+      commitHistory[[i]][["commit"]][["author"]][["name"]],
+      ". Committer is ",
+      commitHistory[[i]][["commit"]][["committer"]][["name"]]
+      )
+    )
+}
+```
 
+
+
+#其中：
+
+author: 為其中commit元素底下的author底下的 name元素值（為方便討論以下用->表示為
+commit->author->name)。
+
+committer： commit-> committer-> name元素值。
+
+commitDate: commit-> commiter-> date元素值。
+
+任務一：存下來每個commit的author。
+
+任務二：存下來每個commit的committer。
+
+任務三：存下來每個author與committer同人的commitDate。
+
+```{r}
+for(i in seq_along(commitHistory)){
+  print(
+    str_c(
+      "Author is ",
+      commitHistory[[i]][["commit"]][["author"]][["name"]],
+      ". Committer is ",
+      commitHistory[[i]][["commit"]][["committer"]][["name"]]
+      )
+    )
+}
 ```
 
