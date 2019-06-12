@@ -1641,11 +1641,45 @@ for(i in seq_along(commitHistory)){
     commitHistory[[i]][["commit"]][["committer"]][["name"]],
       )
 }
-for(i in seq_along(commitHistory)){
-  print(
-    commitHistory[[i]][["commit"]][["author"]][["name"]],
-      )
+
+```
+
+```{r}
+load(url("https://www.dropbox.com/s/duh5aaqgl2f5m3z/loopTranscriptData.Rda?raw=1"))
+studentIds <- unique(transcriptDataFinal$學號) # 全部可能學號
+studentIds5 <- studentIds[1:5] # 前5筆學號
+```
+
+```{r}
+for(i in studentIds5){ 
+  print(i) 
 }
+```
+
+```{r}
+for(i in c(1:5)){ 
+  print(i) 
+}
+```
+
+```{r}
+for(i in c(1:5)){ 
+  print(studentIds5[[i]]) 
+}
+```
+
+```{r}
+for(i in seq_along(studentIds5)){
+  print(studentIds5[[i]])
+}
+```
+
+```{r}
+
+```
+
+```{r}
+
 ```
 
 ```{r}
