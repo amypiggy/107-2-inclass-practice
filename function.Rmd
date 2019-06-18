@@ -189,6 +189,17 @@ all(a>2)
 ```
 
 ```{r}
+a <- 3
 
+testfun <- function(x){
+  y <- a/4
+  output <- x*y
+  return(output)
+}
+
+testfun(2)
+
+a <- 4
+testfun(2)
 ```
 
